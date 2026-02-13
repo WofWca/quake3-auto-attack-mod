@@ -195,7 +195,7 @@ typedef struct {
 	int			pmove_fixed;
 	int			pmove_msec;
 
-	qboolean	cg_autoAttack;
+	qboolean	autoAttack;
 	// `Pmove` will read and write this.
 	int			autoAttackTimer;
 	// For clients this should have a greater value than for the server,

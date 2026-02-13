@@ -1022,6 +1022,9 @@ typedef struct {
 	char			redTeam[MAX_QPATH];
 	char			blueTeam[MAX_QPATH];
 
+	// parsed from systeminfo
+	qboolean		g_autoAttack;
+
 	int				voteTime;
 	int				voteYes;
 	int				voteNo;
@@ -1465,6 +1468,7 @@ void CG_InitConsoleCommands( void );
 //
 void CG_ExecuteNewServerCommands( int latestSequence );
 void CG_ParseServerinfo( void );
+void CG_ParseSysteminfo( void );
 void CG_SetConfigValues( void );
 void CG_ShaderStateChanged(void);
 #ifdef MISSIONPACK
